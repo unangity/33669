@@ -1,0 +1,25 @@
+[project]
+name = "renovate_test"
+version = "0.0.1"
+readme = "README.md"
+requires-python = ">=3.8"
+keywords = ["renovate_test"]
+authors = [{ name = "Author Me", email = "author@example.com" }]
+classifiers = [
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11"
+]
+dynamic = ["description"]
+
+dependencies = [
+    test_renovate==1.0.0
+]
+
+[build-system]
+requires = ["flit_core~=3.2"]
+build-backend = "flit_core.buildapi"
+
