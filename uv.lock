@@ -1,0 +1,23 @@
+version = 1
+revision = 1
+requires-python = ">=3.8"
+
+[[package]]
+name = "renovate-test"
+version = "0.0.1"
+source = { editable = "." }
+dependencies = [
+    { name = "test-renovate" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "test-renovate", specifier = "==1.0.0" }]
+
+[[package]]
+name = "test-renovate"
+version = "1.0.0"
+source = { registry = "https://test.pypi.org/simple/" }
+sdist = { url = "https://test-files.pythonhosted.org/packages/23/77/b9fda06d91dab05cfeebd1ddd6996c766e508d2db0bb093c4c9f1430e51f/test_renovate-1.0.0.tar.gz", hash = "sha256:90c1fd9051493e063863c8bd03f110245d5ab5f259a931c600871f3d5b95ccd3", size = 2038 }
+wheels = [
+    { url = "https://test-files.pythonhosted.org/packages/98/04/c617ca674a16cce12b9fbdd6566b25d14e56be699f2fd5bb859cb148623a/test_renovate-1.0.0-py3-none-any.whl", hash = "sha256:3b280955f7c661b1431608c4d1942e48809f1bb58f089d8417e3f37331b849d7", size = 1508 },
+]
