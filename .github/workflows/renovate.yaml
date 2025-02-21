@@ -13,6 +13,8 @@ jobs:
         uses: actions/setup-python@v5.4.0
       - name: Show existing package versions
         run: pip install test_renovate==9999 # fake version to trigger error
+        env:
+          PIP_EXTRA_INDEX_URL: https//test.pypi.org/simple
       - name: Renovate
         uses: renovatebot/github-action@v41.0.13
         with:
