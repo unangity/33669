@@ -16,7 +16,6 @@ classifiers = [
 dynamic = ["description"]
 
 dependencies = [
-    "test_renovate~=1.0",
     "flask~=3.0"
 ]
 
