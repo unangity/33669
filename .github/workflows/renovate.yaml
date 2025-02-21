@@ -1,6 +1,6 @@
 name: Renovate
 on:
-  pull_request:
+  workflow_dispatch:
 
 jobs:
   renovate:
@@ -18,5 +18,8 @@ jobs:
         with:
           configurationFile: renovate.json
           token: ${{ github.token }}
-          
+          renovate-version: full
+        env:
+          UV_NATIVE_TLS: "true"
+          LOG_LEVEL: 'debug'
 
