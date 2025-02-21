@@ -1,6 +1,6 @@
 # 33669
 
-Reproduction for Renivate discussion 33669
+Reproduction for [Renovate discussion 33669](https://github.com/renovatebot/renovate/blob/main/docs/development/minimal-reproductions.md)
 
 ## Current behavior
 
