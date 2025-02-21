@@ -16,7 +16,7 @@ classifiers = [
 dynamic = ["description"]
 
 dependencies = [
-    "flask~=3.0"
+    "requests~=2.32"
 ]
 
 [build-system]
