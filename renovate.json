@@ -10,7 +10,4 @@
         "enabled": true,
         "schedule": ["* * * * *"]
     },
-    "repositories": [
-        "unangity/33669"
-    ]
 }
