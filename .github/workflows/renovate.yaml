@@ -9,5 +9,14 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v4
+      - name: python setup
+        uses: actions/setup-python@v5.4.0
+      - name: Show existing package versions
+        run: pip install test_renovate==9999 # fake version to trigger error
       - name: Renovate
         uses: renovatebot/github-action@v41.0.13
+        with:
+          configurationFile: renovate.json
+          token: ${{ secrets.RENOVATE_TOKEN }}
+          
+
