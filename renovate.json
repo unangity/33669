@@ -1,6 +1,12 @@
 {
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
     "extends": ["config:recommended"],
+    "packageRules": [
+        {
+            "matchDatasources":["pypi"],
+            "registryUrls": ["https://test.pypi.org/simple"]
+        }
+    ],
     "lockFileMaintenance": {
         "enabled": true,
         "schedule": ["* * * * *"]
