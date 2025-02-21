@@ -12,6 +12,6 @@
         "schedule": ["* * * * *"]
     },
     "repositories": [
-        "unangity/minimal-reproduction-renovate"
+        "unangity/33669"
     ]
 }
