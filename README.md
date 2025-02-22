@@ -20,5 +20,3 @@ This behaviour can be seen in the PR created in <https://github.com/unangity/336
 ## Link to the Renovate issue or Discussion
 
 https://github.com/renovatebot/renovate/discussions/33669
-
-failed:
