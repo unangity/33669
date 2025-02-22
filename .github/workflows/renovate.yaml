@@ -6,6 +6,10 @@ jobs:
   renovate:
     name: Run renovate
     runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
+      contents: write
     steps:
       - name: checkout
         uses: actions/checkout@v4
@@ -18,11 +22,3 @@ jobs:
         run: python3 -m pip install test_renovate==9999 # fake version to trigger error
         env:
           PIP_EXTRA_INDEX_URL: https://test.pypi.org/simple
-      - name: Renovate
-        uses: renovatebot/github-action@v41.0.13
-        with:
-          configurationFile: renovate.json
-          renovate-version: full
-        env:
-          UV_NATIVE_TLS: "true"
-          LOG_LEVEL: "debug"
