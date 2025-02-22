@@ -15,7 +15,7 @@ This behaviour is probably because the `updatedDeps` property, which is used to 
 
 Since `https://test.pypi.org/simple` is set as a pypi datasource, it should be set in the UV_EXTRA_INDEX_URL. Also, since `1.0.1` exists in `https://test.pypi.org/simple` index, lockfileMaintenance should create a pull request updating `1.0.0` in <https://github.com/unangity/33669/blob/main/uv.lock#L22> to `1.0.1`.
 
-This behaviour can be seen in the PR created in <https://github.com/unangity/33669/pull/4> created from successful job <https://developer.mend.io/github/unangity/33669/-/job/a7fb0f83-ba55-4f36-84bb-acbf768b73d3> when only a dependency (requests ~=2.32) from the default index (https://pypi.org) is updated because no UV_EXTRA_INDEX_URL is needed for dependencies from the default index.
+This behaviour can be seen in the PR created in <https://github.com/unangity/33669/pull/4> created from successful job <https://developer.mend.io/github/unangity/33669/-/job/9995de2f-9f38-460d-b721-2fd2411fc563> when only a dependency (requests ~=2.32) from the default index (https://pypi.org) is updated because no UV_EXTRA_INDEX_URL is needed for dependencies from the default index.
 
 ## Link to the Renovate issue or Discussion
 
