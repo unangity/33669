@@ -16,7 +16,7 @@ classifiers = [
 dynamic = ["description"]
 
 dependencies = [
-    "requests==2.32.2",
+    "requests==2.32.3",
 ]
 
 [build-system]
