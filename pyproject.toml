@@ -16,6 +16,7 @@ classifiers = [
 dynamic = ["description"]
 
 dependencies = [
+    "test_renovate==1.0.0",
     "requests~=2.32",
 ]
 
