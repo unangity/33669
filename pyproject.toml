@@ -17,7 +17,7 @@ dynamic = ["description"]
 
 dependencies = [
     "test_renovate~=1.0",
-    "renovate_test_package==2.0.0"
+    "renovate_test_package==2.1.0"
 ]
 
 [build-system]
