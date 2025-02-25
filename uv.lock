@@ -1,22 +1,23 @@
 version = 1
+revision = 1
 requires-python = ">=3.8"
 
 [[package]]
 name = "renovate-test"
 version = "0.0.1"
-source = { editable = "." }
+source = { virtual = "." }
 dependencies = [
     { name = "test-renovate" },
 ]
 
 [package.metadata]
-requires-dist = [{ name = "test-renovate", specifier = "==1.0.0" }]
+requires-dist = [{ name = "test-renovate", specifier = "~=2.0" }]
 
 [[package]]
 name = "test-renovate"
-version = "1.0.0"
+version = "2.0.0"
 source = { registry = "https://test.pypi.org/simple" }
-sdist = { url = "https://test-files.pythonhosted.org/packages/23/77/b9fda06d91dab05cfeebd1ddd6996c766e508d2db0bb093c4c9f1430e51f/test_renovate-1.0.0.tar.gz", hash = "sha256:90c1fd9051493e063863c8bd03f110245d5ab5f259a931c600871f3d5b95ccd3", size = 2038 }
+sdist = { url = "https://test-files.pythonhosted.org/packages/4b/f9/9c97987746693749080430e427a69398afbd497e5dfdb8a7c9a58a582547/test_renovate-2.0.0.tar.gz", hash = "sha256:16186d22b170edfc0b70ad21ec43a4d77978db32d03cbcc71b611f37ec63cc94", size = 2039 }
 wheels = [
-    { url = "https://test-files.pythonhosted.org/packages/98/04/c617ca674a16cce12b9fbdd6566b25d14e56be699f2fd5bb859cb148623a/test_renovate-1.0.0-py3-none-any.whl", hash = "sha256:3b280955f7c661b1431608c4d1942e48809f1bb58f089d8417e3f37331b849d7", size = 1508 },
+    { url = "https://test-files.pythonhosted.org/packages/f0/02/e7ecc7cdf2dd1a308dcd2daf9daf6925940145157d8fba9f0e6f137cfccd/test_renovate-2.0.0-py3-none-any.whl", hash = "sha256:44109ebbb2f8d5428db66cc7b2a81e01db4ceedbb3bb3091479a22813b3cd10f", size = 1505 },
 ]
