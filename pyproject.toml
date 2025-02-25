@@ -18,8 +18,3 @@ dynamic = ["description"]
 dependencies = [
     "test_renovate~=1.0",
 ]
-
-[build-system]
-requires = ["flit_core~=3.2"]
-build-backend = "flit_core.buildapi"
-
