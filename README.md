@@ -9,7 +9,7 @@ This behaviour is probably because the `updatedDeps` property, which is used to 
 
 ## Expected behavior
 
-Since `https://test.pypi.org/simple` is set as a pypi datasource, it should be set in the UV_EXTRA_INDEX_URL in the logs. Also, since `1.0.1` of `test_renovate` package exists in `https://test.pypi.org/simple` index, lockfileMaintenance should create a pull request updating `1.0.0` in <https://github.com/unangity/33669/blob/main/uv.lock#L22> to `1.0.1`.
+Since `https://test.pypi.org/simple` is set as a pypi datasource, it should be set in the UV_EXTRA_INDEX_URL in the logs. Also, since `1.0.1` of `test_renovate` package exists in `https://test.pypi.org/simple` index, lockfileMaintenance should create a pull request updating `1.0.0` in <https://github.com/unangity/33669/blob/main/uv.lock#L17> to `1.0.1`.
 
 ## Link to the Renovate issue or Discussion
 
